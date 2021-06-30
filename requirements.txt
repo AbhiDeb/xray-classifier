@@ -8,7 +8,7 @@ async-generator==1.10
 bleach==3.3.0
 cachetools==4.2.2
 cffi==1.14.5
-chardet==4.0.0
+chardet==4.0.1
 
 cloudpickle==1.6.0
 
