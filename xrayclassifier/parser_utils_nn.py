@@ -10,7 +10,7 @@ class KParseArgs():
                             type=int)
         self.parser.add_argument("--output", help="Output from First & Hidden Layers", action='store', nargs='?', default=16,
                             type=int)
-        self.parser.add_argument("--epochs", help="Number of epochs for training", nargs='?', action='store', default=1,
+        self.parser.add_argument("--epochs", help="Number of epochs for training", nargs='?', action='store', default=30,
                             type=int)
         self.parser.add_argument("--loss", help="Loss Function for the Gradients", nargs='?', action='store',
                             default='binary_crossentropy', type=str)

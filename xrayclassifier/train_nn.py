@@ -139,7 +139,8 @@ class KTrain():
 
 
         # Configure output_dir
-        output_dir = tempfile.mkdtemp()
+        # output_dir = tempfile.mkdtemp()
+        output_dir = '/tflogs'
         print(output_dir,' is the Output tmp directory created')
 
         #
