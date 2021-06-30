@@ -1,0 +1,10 @@
+stages:
+    - build
+
+build:
+    stage: build
+    before_script:
+        - cmd.exe "/K" C:\Users\abhitesh.debnath\Anaconda3\Scripts\activate.bat C:\Users\abhitesh.debnath\Anaconda3\envs\cv_env
+    script:
+        - cd xrayclassifier
+        - python main_nn.py

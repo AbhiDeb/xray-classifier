@@ -1,0 +1,24 @@
+
+        - cmd.exe "/K" C:\Users\abhitesh.debnath\Anaconda3\Scripts\activate.bat C:\Users\abhitesh.debnath\Anaconda3\envs\cv_env
+
+image: continuumio/miniconda3:latest
+
+before_script:
+  - conda env create -f environment.yml
+  - source activate koopa
+
+tests:
+  stage: test
+  script:
+    - python -m unittest discover -v
+
+stages:
+    - build
+
+build:
+    stage: build
+    before_script:
+        - conda activate cv_env
+    script:
+        - cd xrayclassifier
+        - python main_nn.py

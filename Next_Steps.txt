@@ -1,0 +1,4 @@
+Tensorboard to see progress training
+CML for CI/CD pipeline
+Lightly AI
+Dockerize deployment
